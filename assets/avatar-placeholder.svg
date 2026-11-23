@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141a2e"/>
+      <stop offset="50%" stop-color="#1e183a"/>
+      <stop offset="100%" stop-color="#0e1322"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="400" rx="200" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Subtle Ring -->
+  <circle cx="200" cy="200" r="192" fill="none" stroke="url(#accentGrad)" stroke-width="2" stroke-opacity="0.5" stroke-dasharray="6 4"/>
+  <circle cx="200" cy="200" r="175" fill="url(#glowGrad)"/>
+
+  <!-- Tech Geometric Decor -->
+  <circle cx="200" cy="200" r="145" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.3"/>
+
+  <!-- Stylized Person Avatar Silhouette -->
+  <!-- Shoulders & Torso -->
+  <path d="M 120 330 C 120 270, 150 250, 200 250 C 250 250, 280 270, 280 330 Z" fill="#2d2b52" stroke="url(#accentGrad)" stroke-width="2"/>
+  
+  <!-- Neck -->
+  <rect x="186" y="215" width="28" height="45" rx="10" fill="#3b3765"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="175" rx="52" ry="62" fill="#34305c" stroke="url(#accentGrad)" stroke-width="2"/>
+  
+  <!-- Hair / Scarf Styling Minimal -->
+  <path d="M 148 180 C 146 125, 170 112, 200 112 C 230 112, 254 125, 252 180 C 240 148, 225 140, 200 140 C 175 140, 160 148, 148 180 Z" fill="#6d28d9"/>
+
+  <!-- Monogram Badge -->
+  <circle cx="200" cy="200" r="28" fill="#1e183a" stroke="#c084fc" stroke-width="2"/>
+  <text x="200" y="208" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="20" fill="#ffffff" text-anchor="middle" letter-spacing="1">KF</text>
+
+  <!-- Developer code symbols -->
+  <g opacity="0.75" font-family="monospace" font-size="14" fill="#c084fc">
+    <text x="75" y="140">&lt;dev&gt;</text>
+    <text x="280" y="140">&#123; code &#125;</text>
+    <text x="85" y="260">print()</text>
+    <text x="285" y="260">&lt;/&gt;</text>
+  </g>
+
+  <!-- Replace Hint Badge -->
+  <rect x="100" y="340" width="200" height="30" rx="15" fill="#0b0f19" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="200" y="360" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#e9d5ff" text-anchor="middle">Click to Upload / Replace Photo</text>
+</svg>

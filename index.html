@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kousar Fathima - First-Year B.Tech Computer Science & Engineering student at DR. RVR NRI College, Pothavarapadu (NIAT). Portfolio showcasing Python, Web Development, Linux basics, and GitHub repositories.">
+  <meta name="keywords" content="Kousar Fathima, Portfolio, B.Tech CSE, DR. RVR NRI College, NIAT, Python, Web Development, Linux, Git, GitHub">
+  <meta name="author" content="Kousar Fathima">
+  <title>Kousar Fathima | B.Tech CSE &bull; DR. RVR NRI College (NIAT)</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Ambient Cosmic Glowing Dust & Blobs -->
+  <div class="ambient-nebula nebula-top-left" aria-hidden="true"></div>
+  <div class="ambient-nebula nebula-top-right" aria-hidden="true"></div>
+  <div class="ambient-nebula nebula-center" aria-hidden="true"></div>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <!-- Full Name Brand Logo in Main Menu (Replaced 'KF' with 'Kousar Fathima') -->
+      <a href="#home" class="nav-brand" aria-label="Kousar Fathima Home">
+        <span class="brand-monogram">Kousar Fathima<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#learning" class="nav-item">Highlights</a>
+        <a href="#education" class="nav-item">Experience</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- Right Controls: Theme Toggle & Mobile Menu -->
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme brightness" title="Toggle glow mode">
+          <i class="fa-regular fa-sun" id="theme-icon"></i>
+        </button>
+
+        <button type="button" class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 1. HERO SECTION (REFERENCE MATCHED) ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-layout">
+        <!-- Hero Left Column -->
+        <div class="hero-text-col">
+          <!-- Availability Pill Tag -->
+          <div class="availability-pill">
+            <span class="status-indicator-dot"></span>
+            <span>Available for collaborations</span>
+          </div>
+
+          <!-- Greeting -->
+          <p class="hero-greeting">Hi &#128075; I'm</p>
+
+          <!-- Large Name Title -->
+          <h1 class="hero-name">Kousar Fathima</h1>
+
+          <!-- Dynamic Role Title with Animated Typing Cursor (Two Lines: B.Tech CSE NIAT & Next Wave of Technologies) -->
+          <div class="hero-role-wrapper">
+            <span class="role-text-gradient" id="dynamic-role">B.Tech CSE - NIAT</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <!-- Bio Pitch -->
+          <p class="hero-summary">
+            First-Year B.Tech Computer Science student at <strong>DR. RVR NRI College, Pothavarapadu</strong> studying under <strong>NIAT</strong>. I build responsive web interfaces, practice Python algorithms, manage GitHub repositories, and learn Linux fundamentals.
+          </p>
+
+          <!-- Action Buttons (Gradient Pill + Glass Buttons - Clean Developer Focus) -->
+          <div class="hero-buttons-row">
+            <a href="#projects" class="btn btn-gradient-glow" id="btn-view-projects">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+
+            <a href="#skills" class="btn btn-glass-card" id="btn-hero-skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Explore Skills</span>
+            </a>
+
+            <a href="#contact" class="btn btn-ghost-link" id="btn-hero-contact">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Micro Badges -->
+          <div class="hero-quick-meta">
+            <span class="meta-badge"><i class="fa-solid fa-building-columns"></i> DR. RVR NRI College</span>
+            <span class="meta-badge"><i class="fa-solid fa-award"></i> NIAT Program</span>
+            <span class="meta-badge"><i class="fa-brands fa-linux"></i> Linux Basics</span>
+            <span class="meta-badge"><i class="fa-brands fa-github"></i> GitHub Repositories</span>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: AI & Computer Technology Screen Mockup (No Floating Badges) -->
+        <div class="hero-visual-col">
+          <div class="hero-device-mockup" id="hero-device-wrapper">
+            <!-- Tablet Frame showcasing Futuristic AI & Computer Technology Setup -->
+            <div class="mockup-screen-frame">
+              <div class="mockup-camera-dot"></div>
+              
+              <div class="screen-content-area">
+                <img 
+                  src="assets/developer-workspace.svg" 
+                  alt="Futuristic AI & Computer Technology Display" 
+                  class="screen-photo-display"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT ME SECTION (REFERENCE MATCHED) ==================== -->
+    <section class="section-block" id="about">
+      <div class="container">
+        <h2 class="section-headline text-center">About Me</h2>
+
+        <div class="about-grid-layout">
+          <!-- Left Main Narrative Card -->
+          <div class="glass-surface about-main-card">
+            <p class="about-lead-para">
+              First-year Computer Science and Engineering student at <strong>DR. RVR NRI College, Pothavarapadu</strong>, currently studying under the <strong>NIAT</strong> program.
+            </p>
+            <p class="about-secondary-para">
+              Passionate about technology, programming fundamentals, and modern web interfaces. I enjoy practicing Python programming, structuring web pages with HTML and CSS, managing GitHub repositories, and learning computer science concepts step by step.
+            </p>
+            <p class="about-secondary-para">
+              I believe in strong computer science foundations, clean structure, and turning creative ideas into functional experiences that are intuitive, robust, and accessible for everyone.
+            </p>
+
+            <!-- Tech Tag Pills at the Bottom (Matching Reference - "GitHub", Not "Git and GitHub") -->
+            <div class="about-skills-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">Linux Basics</span>
+              <span class="tech-pill">GitHub</span>
+              <span class="tech-pill">Web Development</span>
+              <span class="tech-pill">AI Tools</span>
+            </div>
+          </div>
+
+          <!-- Right 2x2 Feature Cards Grid (Student Information & Degree Focus) -->
+          <div class="about-feature-cards">
+            <!-- Card 1: Degree -->
+            <div class="glass-surface feature-info-card">
+              <div class="card-top-icon icon-cyan">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <h3 class="feature-card-title">B.Tech CSE</h3>
+              <p class="feature-card-sub">DR. RVR NRI College, Pothavarapadu</p>
+            </div>
+
+            <!-- Card 2: Institution / Program -->
+            <div class="glass-surface feature-info-card">
+              <div class="card-top-icon icon-purple">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <h3 class="feature-card-title">NIAT Program</h3>
+              <p class="feature-card-sub">Next Wave of Technologies</p>
+            </div>
+
+            <!-- Card 3: Academic Status -->
+            <div class="glass-surface feature-info-card">
+              <div class="card-top-icon icon-blue">
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+              <h3 class="feature-card-title">First Year</h3>
+              <p class="feature-card-sub">Undergraduate Student</p>
+            </div>
+
+            <!-- Card 4: Core Interests -->
+            <div class="glass-surface feature-info-card">
+              <div class="card-top-icon icon-green">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3 class="feature-card-title">Core Interests</h3>
+              <p class="feature-card-sub">Technology, Web &amp; AI Tools</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. SKILLS SECTION: "Tools I build with" (WITH LINUX & GITHUB) ==================== -->
+    <section class="section-block" id="skills">
+      <div class="container">
+        <div class="section-header-pill-wrapper">
+          <span class="pill-category-badge">SKILLS</span>
+        </div>
+        <h2 class="section-headline text-center">Tools I build with</h2>
+        <p class="section-subheadline text-center">
+          A foundation spanning computer science fundamentals, programming languages, Linux basics, and GitHub repositories.
+        </p>
+
+        <!-- Category Grid of Skill Cards with Realistic Foundational Progress Bars -->
+        <div class="skills-category-grid skills-four-cols">
+          <!-- Category 1: Programming -->
+          <div class="glass-surface skill-group-card">
+            <h3 class="skill-group-title">Programming</h3>
+            
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 50%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">HTML5</span>
+                <span class="skill-pct">55%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 55%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">CSS3</span>
+                <span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Tools & Environment (Linux Basics, GitHub Basics, VS Code) -->
+          <div class="glass-surface skill-group-card">
+            <h3 class="skill-group-title">Tools &amp; Environment</h3>
+
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">Linux Basics</span>
+                <span class="skill-pct">40%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill fill-cyan" style="width: 40%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">GitHub Basics</span>
+                <span class="skill-pct">45%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill fill-cyan" style="width: 45%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">VS Code Basics</span>
+                <span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill fill-cyan" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Web Development -->
+          <div class="glass-surface skill-group-card">
+            <h3 class="skill-group-title">Web Development</h3>
+
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">Semantic Layouts</span>
+                <span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 50%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">CSS Flexbox &amp; Grid</span>
+                <span class="skill-pct">45%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 45%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">Responsive Design</span>
+                <span class="skill-pct">45%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 45%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Currently Exploring -->
+          <div class="glass-surface skill-group-card">
+            <h3 class="skill-group-title">Currently Exploring</h3>
+
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-pct">30%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill fill-purple" style="width: 30%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">Artificial Intelligence</span>
+                <span class="skill-pct">35%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill fill-purple" style="width: 35%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span class="skill-name">AI Tools</span>
+                <span class="skill-pct">40%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill fill-purple" style="width: 40%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. FEATURED PROJECTS SECTION (MATCHING REFERENCE) ==================== -->
+    <section class="section-block" id="projects">
+      <div class="container">
+        <div class="section-header-pill-wrapper">
+          <span class="pill-category-badge">WORK</span>
+        </div>
+        <h2 class="section-headline text-center">Featured Projects</h2>
+        <p class="section-subheadline text-center">
+          A collection of Computer Science, Web Development, and Python projects that demonstrate my technical learning and problem-solving skills.
+        </p>
+
+        <div class="featured-projects-stack">
+          <!-- Featured Project 1: Personal Portfolio -->
+          <article class="glass-surface project-featured-card">
+            <div class="project-media-side">
+              <img 
+                src="assets/project1-portfolio.svg" 
+                alt="Personal Portfolio Website interface" 
+                class="featured-project-thumb"
+              >
+              <span class="featured-floating-tag">Featured</span>
+            </div>
+
+            <div class="project-details-side">
+              <span class="project-category-overline">FRONTEND DEVELOPMENT &bull; PORTFOLIO</span>
+              <h3 class="project-main-title">Personal Portfolio Website</h3>
+              <p class="project-body-text">
+                A personal website designed to introduce myself, my education, and my technical skills as a first-year Computer Science student. Built with a responsive layout, dark cosmic aesthetic, clean navigation, and version-controlled via GitHub repository.
+              </p>
+
+              <div class="project-tech-badges">
+                <span class="badge-pill">HTML5</span>
+                <span class="badge-pill">CSS3</span>
+                <span class="badge-pill">JavaScript</span>
+                <span class="badge-pill">GitHub Repo</span>
+                <span class="badge-pill">Responsive</span>
+              </div>
+
+              <div class="project-feature-checklist">
+                <span><i class="fa-solid fa-check"></i> Responsive Mobile Layout</span>
+                <span><i class="fa-solid fa-check"></i> GitHub Repository Hosted</span>
+                <span><i class="fa-solid fa-check"></i> Semantic Web Standards</span>
+              </div>
+
+              <div class="project-action-buttons">
+                <button type="button" class="btn btn-gradient-glow btn-sm run-demo-btn" data-demo="portfolio">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <span>Live Preview</span>
+                </button>
+                <button type="button" class="btn btn-glass-card btn-sm view-project-btn" data-project="portfolio">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>View Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured Project 2: Web Development Projects -->
+          <article class="glass-surface project-featured-card">
+            <div class="project-media-side">
+              <img 
+                src="assets/project2-webdev.svg" 
+                alt="Web Development Projects showcase" 
+                class="featured-project-thumb"
+              >
+              <span class="featured-floating-tag">Beginner Project</span>
+            </div>
+
+            <div class="project-details-side">
+              <span class="project-category-overline">WEB DESIGN &bull; UI/UX</span>
+              <h3 class="project-main-title">Web Development Projects</h3>
+              <p class="project-body-text">
+                A collection of beginner-level HTML and CSS learning projects, practicing semantic page layouts, typography, styling cards, buttons, and navigation bars with modern Flexbox and Grid.
+              </p>
+
+              <div class="project-tech-badges">
+                <span class="badge-pill">HTML5</span>
+                <span class="badge-pill">CSS3</span>
+                <span class="badge-pill">Flexbox</span>
+                <span class="badge-pill">Grid</span>
+              </div>
+
+              <div class="project-feature-checklist">
+                <span><i class="fa-solid fa-check"></i> Semantic Structure</span>
+                <span><i class="fa-solid fa-check"></i> Color Harmony</span>
+                <span><i class="fa-solid fa-check"></i> Touch-Friendly Cards</span>
+              </div>
+
+              <div class="project-action-buttons">
+                <button type="button" class="btn btn-gradient-glow btn-sm run-demo-btn" data-demo="webdev">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <span>Live Demo</span>
+                </button>
+                <button type="button" class="btn btn-glass-card btn-sm view-project-btn" data-project="webdev">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>View Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured Project 3: Python Practice -->
+          <article class="glass-surface project-featured-card">
+            <div class="project-media-side">
+              <img 
+                src="assets/project3-python.svg" 
+                alt="Python Practice terminal programs" 
+                class="featured-project-thumb"
+              >
+              <span class="featured-floating-tag">Logic Building</span>
+            </div>
+
+            <div class="project-details-side">
+              <span class="project-category-overline">CORE PROGRAMMING &bull; ALGORITHMS</span>
+              <h3 class="project-main-title">Python Practice</h3>
+              <p class="project-body-text">
+                Small Python programs created while learning programming fundamentals, covering mathematical problem solving, condition handling, and basic loop iterations executed in Linux terminal environments.
+              </p>
+
+              <div class="project-tech-badges">
+                <span class="badge-pill">Python 3</span>
+                <span class="badge-pill">Linux Bash</span>
+                <span class="badge-pill">Algorithms</span>
+                <span class="badge-pill">Logic Building</span>
+              </div>
+
+              <div class="project-feature-checklist">
+                <span><i class="fa-solid fa-check"></i> Control Flow &amp; Loops</span>
+                <span><i class="fa-solid fa-check"></i> Modular Functions</span>
+                <span><i class="fa-solid fa-check"></i> Linux Terminal Execution</span>
+              </div>
+
+              <div class="project-action-buttons">
+                <button type="button" class="btn btn-gradient-glow btn-sm run-demo-btn" data-demo="python">
+                  <i class="fa-solid fa-terminal"></i>
+                  <span>Run Code</span>
+                </button>
+                <button type="button" class="btn btn-glass-card btn-sm view-project-btn" data-project="python">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>View Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. ACADEMIC HIGHLIGHTS / PIPELINE (MATCHING REFERENCE IMAGE 7) ==================== -->
+    <section class="section-block" id="learning">
+      <div class="container">
+        <div class="section-header-pill-wrapper">
+          <span class="pill-category-badge">METHODOLOGY</span>
+        </div>
+        <h2 class="section-headline text-center">Academic &amp; Learning Highlights</h2>
+        <p class="section-subheadline text-center">
+          How I approach software fundamentals, computational logic, and web technology.
+        </p>
+
+        <div class="academic-pipeline-card glass-surface">
+          <!-- Left: Visual Methodology Flow -->
+          <div class="pipeline-visual-box">
+            <div class="workflow-diagram-mockup">
+              <div class="flow-step step-1">
+                <span class="step-badge">1. Problem</span>
+                <span class="step-title">Logic &amp; Input</span>
+              </div>
+              <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              <div class="flow-step step-2">
+                <span class="step-badge">2. Core</span>
+                <span class="step-title">Python Code</span>
+              </div>
+              <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              <div class="flow-step step-3">
+                <span class="step-badge">3. UI/UX</span>
+                <span class="step-title">HTML &amp; CSS</span>
+              </div>
+              <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              <div class="flow-step step-4">
+                <span class="step-badge">4. Output</span>
+                <span class="step-title">Working Web App</span>
+              </div>
+            </div>
+            <p class="diagram-caption">Fig 1. First-Year Computer Science learning, Linux CLI, and implementation workflow.</p>
+          </div>
+
+          <!-- Right: Summary & Learning Comparison Table -->
+          <div class="pipeline-summary-box">
+            <h3 class="pipeline-title">Learning Summary</h3>
+            <p class="pipeline-desc">
+              My engineering education blends core computational thinking with hands-on web technology, Linux terminal commands, and GitHub version control. Starting from logical problem formulation in Python to creating accessible user interfaces.
+            </p>
+
+            <h4 class="comparison-title">Core Focus Areas</h4>
+            <div class="comparison-table-wrapper">
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th>Domain</th>
+                    <th>Focus Concepts</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Python Programming</strong></td>
+                    <td>Loops, Conditions, Functions</td>
+                    <td><span class="table-tag-green">Active Practice</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Linux &amp; Git</strong></td>
+                    <td>Bash commands, GitHub Repositories</td>
+                    <td><span class="table-tag-green">Basics Known</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Web Development</strong></td>
+                    <td>Semantic HTML, CSS Layouts</td>
+                    <td><span class="table-tag-green">Foundational</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Emerging Tech &amp; AI</strong></td>
+                    <td>AI Tools, Prompt Engineering</td>
+                    <td><span class="table-tag-cyan">Exploring</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. EXPERIENCE & EDUCATION (MATCHING REFERENCE IMAGE 8) ==================== -->
+    <section class="section-block" id="education">
+      <div class="container">
+        <h2 class="section-headline text-center">Experience &amp; Education</h2>
+        <p class="section-subheadline text-center">
+          Learning, building, and practicing at the intersection of computer science and web development.
+        </p>
+
+        <div class="exp-edu-dual-grid">
+          <!-- Column 1: Academic Roles & Experience -->
+          <div class="glass-surface exp-col-card">
+            <div class="col-header-row">
+              <div class="col-header-icon icon-blue">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <h3 class="col-title">Academic &amp; Learning Journey</h3>
+            </div>
+
+            <div class="timeline-tree">
+              <!-- Item 1 -->
+              <div class="timeline-node">
+                <span class="node-marker-bullet bullet-blue"></span>
+                <div class="node-body">
+                  <div class="node-title-row">
+                    <h4 class="node-role">B.Tech CSE Student Developer</h4>
+                    <span class="node-time">Present &bull; Year 1</span>
+                  </div>
+                  <p class="node-org">DR. RVR NRI College, Pothavarapadu (NIAT)</p>
+                  <ul class="node-bullets">
+                    <li><i class="fa-solid fa-circle-check"></i> Practicing Python programming fundamentals and problem solving.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Developing responsive web applications using HTML5 and CSS3.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Managing GitHub repositories and using Linux terminal basics.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Exploring AI developer tools, logic decomposition, and modern software concepts.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="timeline-node">
+                <span class="node-marker-bullet bullet-purple"></span>
+                <div class="node-body">
+                  <div class="node-title-row">
+                    <h4 class="node-role">Science &amp; Mathematics Student</h4>
+                    <span class="node-time">Pre-University</span>
+                  </div>
+                  <p class="node-org">Tirumala Education Institutions, Rajahmundry</p>
+                  <ul class="node-bullets">
+                    <li><i class="fa-solid fa-circle-check"></i> Studied Mathematics, Physics, and Chemistry (MPC).</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Built quantitative reasoning, analytical thinking, and exam preparation habits.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Education Milestones -->
+          <div class="glass-surface exp-col-card">
+            <div class="col-header-row">
+              <div class="col-header-icon icon-purple">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <h3 class="col-title">Education</h3>
+            </div>
+
+            <div class="timeline-tree">
+              <!-- Education Node 1: B.Tech -->
+              <div class="timeline-node">
+                <span class="node-marker-bullet bullet-purple"></span>
+                <div class="node-body">
+                  <div class="node-title-row">
+                    <h4 class="node-role">B.Tech – Computer Science and Engineering</h4>
+                  </div>
+                  <p class="node-org">DR. RVR NRI College, Pothavarapadu &bull; NIAT</p>
+                  <span class="cgpa-pill">Currently Pursuing &bull; First Year</span>
+                </div>
+              </div>
+
+              <!-- Education Node 2: Intermediate -->
+              <div class="timeline-node">
+                <span class="node-marker-bullet bullet-cyan"></span>
+                <div class="node-body">
+                  <div class="node-title-row">
+                    <h4 class="node-role">Intermediate (MPC)</h4>
+                  </div>
+                  <p class="node-org">Tirumala Education Institutions, Rajahmundry</p>
+                  <span class="cgpa-pill pill-completed">Completed</span>
+                </div>
+              </div>
+
+              <!-- Education Node 3: Secondary School -->
+              <div class="timeline-node">
+                <span class="node-marker-bullet bullet-green"></span>
+                <div class="node-body">
+                  <div class="node-title-row">
+                    <h4 class="node-role">Secondary Schooling (Class 10th)</h4>
+                  </div>
+                  <p class="node-org">Viswa Bharathi English Medium High School, Gudivada</p>
+                  <span class="cgpa-pill pill-completed">Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. CERTIFICATIONS & BADGES (WITH LINUX & GITHUB) ==================== -->
+    <section class="section-block">
+      <div class="container">
+        <h2 class="section-headline text-center">Certifications &amp; Focus Areas</h2>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="glass-surface cert-card">
+            <div class="cert-icon-wrap">
+              <i class="fa-solid fa-ribbon"></i>
+            </div>
+            <h3 class="cert-title">Python</h3>
+            <p class="cert-subtitle">Foundations &amp; Programming</p>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="glass-surface cert-card">
+            <div class="cert-icon-wrap">
+              <i class="fa-solid fa-ribbon"></i>
+            </div>
+            <h3 class="cert-title">Web Development</h3>
+            <p class="cert-subtitle">HTML5 &amp; CSS3 Styling</p>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="glass-surface cert-card">
+            <div class="cert-icon-wrap">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <h3 class="cert-title">Git &amp; GitHub</h3>
+            <p class="cert-subtitle">Repository Management</p>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="glass-surface cert-card">
+            <div class="cert-icon-wrap">
+              <i class="fa-brands fa-linux"></i>
+            </div>
+            <h3 class="cert-title">Linux Basics</h3>
+            <p class="cert-subtitle">Terminal &amp; Command Line</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. CONTACT SECTION: "Let's build something" (MATCHING REFERENCE IMAGE 10) ==================== -->
+    <section class="section-block" id="contact">
+      <div class="container">
+        <div class="section-header-pill-wrapper">
+          <span class="pill-category-badge">CONTACT</span>
+        </div>
+        <h2 class="section-headline text-center">Let's build something</h2>
+        <p class="section-subheadline text-center">
+          Have a project, learning collaboration, or student initiative in mind? Send a message.
+        </p>
+
+        <!-- Center Glassmorphic Contact Card -->
+        <div class="contact-card-centered glass-surface">
+          <form id="contact-form" class="clean-contact-form" novalidate>
+            <!-- Name & Email Dual Columns -->
+            <div class="form-row-dual">
+              <div class="input-block">
+                <label for="user-name" class="input-label">Name</label>
+                <input 
+                  type="text" 
+                  id="user-name" 
+                  name="name" 
+                  class="clean-input-field" 
+                  placeholder="Your name" 
+                  required
+                >
+                <span class="field-error-hint" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="input-block">
+                <label for="user-email" class="input-label">Email</label>
+                <input 
+                  type="email" 
+                  id="user-email" 
+                  name="email" 
+                  class="clean-input-field" 
+                  placeholder="you@example.com" 
+                  required
+                >
+                <span class="field-error-hint" id="email-error">Please enter a valid email.</span>
+              </div>
+            </div>
+
+            <!-- Message Textarea -->
+            <div class="input-block">
+              <label for="user-message" class="input-label">Message</label>
+              <textarea 
+                id="user-message" 
+                name="message" 
+                rows="4" 
+                class="clean-input-field clean-textarea" 
+                placeholder="Tell me about your project or inquiry..." 
+                required
+              ></textarea>
+              <span class="field-error-hint" id="message-error">Please write a short message (min 10 characters).</span>
+            </div>
+
+            <!-- Full-Width Gradient Submit Button (Matches Reference) -->
+            <button type="submit" class="btn btn-full-gradient" id="btn-submit-message">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+
+          <!-- Contact Quick Info Footer inside card with Email & LinkedIn -->
+          <div class="contact-footer-meta">
+            <div class="meta-item">
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:Kousarfathima2008@gmail.com" class="meta-email-link" id="email-text">Kousarfathima2008@gmail.com</a>
+              <button type="button" class="btn-copy-chip" id="btn-copy-email" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+            <div class="meta-item">
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/kousar-fathima-155a1841a" target="_blank" rel="noopener noreferrer" class="meta-email-link" title="Open LinkedIn Profile">
+                <span>linkedin.com/in/kousar-fathima-155a1841a</span>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i>
+              </a>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>DR. RVR NRI College, Pothavarapadu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content-row">
+      <div class="footer-left">
+        <span class="brand-monogram">Kousar Fathima<span class="brand-dot">.</span></span>
+        <span class="footer-rights">&copy; 2026 Kousar Fathima &bull; DR. RVR NRI College (NIAT). All Rights Reserved.</span>
+      </div>
+
+      <div class="footer-social-links">
+        <a href="https://www.linkedin.com/in/kousar-fathima-155a1841a" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:Kousarfathima2008@gmail.com" class="footer-social-btn" aria-label="Send Email" title="Send Email">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="#home" class="footer-social-btn" aria-label="Back to Top" title="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== INTERACTIVE MODAL (DETAILS & LIVE RUNNERS) ==================== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog glass-surface">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-body" id="modal-body-content">
+        <!-- Dynamically injected by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div class="toast-popup" id="toast" role="alert" aria-live="assertive">
+    <div class="toast-symbol" id="toast-icon">
+      <i class="fa-solid fa-check"></i>
+    </div>
+    <div class="toast-body">
+      <h4 class="toast-heading" id="toast-title">Success</h4>
+      <p class="toast-subtext" id="toast-message">Action executed successfully.</p>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
